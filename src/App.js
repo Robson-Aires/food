@@ -4,8 +4,9 @@ import { useSelector } from 'react-redux';
 import { Container, Menu, PageBody } from './AppStyled'
 import HomeScreen from './pages/HomeScreen';
 import Tela2Screen from './pages/Tela2Screen';
-import MenuItem from './components/menuItem/index';
 import PrivateRoute from './components/PrivateRoute';
+import MenuItem from './components/menuItem/index';
+import Cart from './components/Cart'
 
 export default () => {
 const name = useSelector(state => state.user.name);
@@ -35,8 +36,8 @@ const name = useSelector(state => state.user.name);
                     </Route>
                 </Switch>
             </PageBody>
-            {/* carrinho de compras
-            <Cart></Cart> */}
+             {/* carrinho de compras */}
+            <Cart></Cart>
         </Container>
         </BrowserRouter>
     );
