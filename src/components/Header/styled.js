@@ -27,4 +27,9 @@ export const SearchInput = styled.input`
     outline: 0;
     padding-left: 50px;
     cursor: pointer;
+    transition: all ease 0.2s;
+    &:focus {
+        cursor: text;
+    }
+    font-size: 15px;
 `;
