@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, CategoryImage } from './styled';
 
-export default ({data, activeCategory, setActiveCategory}) => {
+const categoryItem = ({data, activeCategory, setActiveCategory}) => {
     const handleCategoryClick = () => {
         setActiveCategory( data.id )
     }
@@ -11,3 +11,5 @@ export default ({data, activeCategory, setActiveCategory}) => {
         </Container>
     );
 }
+
+export default categoryItem
