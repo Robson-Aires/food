@@ -7,6 +7,8 @@ import {
     CategoryList,
     ProductArea,
     ProductList,
+    ProductPaginationArea,
+    ProductPaginationItem
      } from './styled';
 import api from '../../api';
 import Header from '../../components/Header/index'
@@ -18,11 +20,15 @@ const MyComponent = () => {
     const [categories, setcategories] = useState([]);
     const [products, setProducts] = useState([]);
     const [activeCategory, setActiveCategory] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [activePage, setActivePage] = useState(0);
 
     const getProducts = async () => {
         const prods = await api.getProducts();
         if(prods.error === ''){
             setProducts(prods.result.data);
+            setTotalPages(prods.result.pages)
+            setActivePage(prods.result.page)
         }
     }
 
@@ -37,8 +43,9 @@ const MyComponent = () => {
     }, []);
 
     useEffect(() => {
+        setProducts([]);
         getProducts()
-    }, [activeCategory]);
+    }, [activeCategory, activePage]);
 
     return (
         <Container>
@@ -79,6 +86,21 @@ const MyComponent = () => {
                 ))}
                 </ProductList>
             </ProductArea>
+            }
+
+            {totalPages > 0 &&
+                <ProductPaginationArea>
+                    {Array(8).fill(0).map((item, index)=>(
+                        <ProductPaginationItem
+                         key={index}
+                         active={activePage}
+                         current={index + 1}
+                         onClick={()=>setActivePage(index+1)}
+                         >
+                            {index + 1}
+                        </ProductPaginationItem>
+                    ))}
+                </ProductPaginationArea>
             }
         </Container>
     );
