@@ -14,6 +14,7 @@ import api from '../../api';
 import Header from '../../components/Header/index'
 import CategoryItem from '../../components/categoryItem';
 import ProductItem from '../../components/ProductItem';
+import Modal from '../../components/Modal';
 
 let searchTimer = null;
 
@@ -23,6 +24,7 @@ const MyComponent = () => {
     const [products, setProducts] = useState([]);
     const [activeCategory, setActiveCategory] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
+    const [modalStatus, setModalStatus] = useState(false);
     const [activePage, setActivePage] = useState(1);
     const [activeSearch, setActiveSearch] = useState('');
 
@@ -118,6 +120,10 @@ const MyComponent = () => {
                     ))}
                 </ProductPaginationArea>
             }
+
+            <Modal status={modalStatus}>
+                ,,,,,,,,,
+            </Modal>
         </Container>
     );
 };

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Logo, SearchInput } from './styled'
 
-export default ({ search, onSearch }) => {
+const Header = ({ search, onSearch }) => {
     const [inputActive, setInputActive] = useState(search === '' ? false : true);
 
     const handleInputFocus = () => {
@@ -32,3 +32,5 @@ export default ({ search, onSearch }) => {
         </Container>
     )
 }
+
+export default Header
