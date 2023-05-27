@@ -24,7 +24,7 @@ const MyComponent = () => {
     const [products, setProducts] = useState([]);
     const [activeCategory, setActiveCategory] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
-    const [modalStatus, setModalStatus] = useState(false);
+    const [modalStatus, setModalStatus] = useState(true);
     const [activePage, setActivePage] = useState(1);
     const [activeSearch, setActiveSearch] = useState('');
 
@@ -121,7 +121,7 @@ const MyComponent = () => {
                 </ProductPaginationArea>
             }
 
-            <Modal status={modalStatus}>
+            <Modal status={modalStatus} setStatus={setModalStatus}>
                 ,,,,,,,,,
             </Modal>
         </Container>
