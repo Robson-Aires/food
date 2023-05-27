@@ -23,11 +23,11 @@ const MyComponent = () => {
     const [products, setProducts] = useState([]);
     const [activeCategory, setActiveCategory] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
-    const [activePage, setActivePage] = useState(0);
+    const [activePage, setActivePage] = useState(1);
     const [activeSearch, setActiveSearch] = useState('');
 
     const getProducts = async () => {
-        const prods = await api.getProducts();
+        const prods = await api.getProducts(activeCategory, activePage, activeSearch);
         if(prods.error === ''){
             setProducts(prods.result.data);
             setTotalPages(prods.result.pages)
@@ -36,24 +36,24 @@ const MyComponent = () => {
     }
 
     useEffect(() => {
-        clearTimeout(searchTimer);
+        clearTimeout(searchTimer)
         searchTimer = setTimeout(()=>{
-            if(headerSearch !== '') {
                 setActiveSearch(headerSearch);
-            }
         }, 2000)
     })
 
-    useEffect(() => {
-        searchTimer = setTimeout(() => {
+    // useEffect(() => {
+    //     searchTimer = setTimeout(() => {
             
-        }, 2000);
-    }, [headerSearch])
+    //     }, 2000);
+    // }, [headerSearch])
 
     useEffect(() => {
         const getCategories = async () => {
             const cat = await api.getCategories();
+            if (cat.error === '') {
                 setcategories(cat.result);
+            }
         };
         getCategories();
     }, []);
