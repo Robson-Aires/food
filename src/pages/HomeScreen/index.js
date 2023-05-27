@@ -15,6 +15,8 @@ import Header from '../../components/Header/index'
 import CategoryItem from '../../components/categoryItem';
 import ProductItem from '../../components/ProductItem';
 
+let searchTimer = null;
+
 const MyComponent = () => {
     const [headerSearch, setHeaderSearch] = useState('');
     const [categories, setcategories] = useState([]);
@@ -22,6 +24,7 @@ const MyComponent = () => {
     const [activeCategory, setActiveCategory] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
     const [activePage, setActivePage] = useState(0);
+    const [activeSearch, setActiveSearch] = useState('');
 
     const getProducts = async () => {
         const prods = await api.getProducts();
@@ -33,11 +36,24 @@ const MyComponent = () => {
     }
 
     useEffect(() => {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(()=>{
+            if(headerSearch !== '') {
+                setActiveSearch(headerSearch);
+            }
+        }, 2000)
+    })
+
+    useEffect(() => {
+        searchTimer = setTimeout(() => {
+            
+        }, 2000);
+    }, [headerSearch])
+
+    useEffect(() => {
         const getCategories = async () => {
             const cat = await api.getCategories();
-            if (cat.error === '') {
                 setcategories(cat.result);
-            }
         };
         getCategories();
     }, []);
@@ -45,7 +61,7 @@ const MyComponent = () => {
     useEffect(() => {
         setProducts([]);
         getProducts()
-    }, [activeCategory, activePage]);
+    }, [activeCategory, activePage, activeSearch]);
 
     return (
         <Container>
@@ -90,7 +106,7 @@ const MyComponent = () => {
 
             {totalPages > 0 &&
                 <ProductPaginationArea>
-                    {Array(8).fill(0).map((item, index)=>(
+                    {Array(totalPages).fill(0).map((item, index)=>(
                         <ProductPaginationItem
                          key={index}
                          active={activePage}
