@@ -9,14 +9,14 @@ import {
      ProductButtons
      } from "./styled";
 
-const ModalProduct = () => {
+const ModalProduct = ({ data }) => {
     return(
         <Container>
             <ProductArea>
-                <ProductPhoto src="" />
+                <ProductPhoto src={data.image} />
                 <ProductInfoArea>
                     <ProductDetails>
-
+                        {data.name}
                     </ProductDetails>
                     <ProductQuantityArea>
 

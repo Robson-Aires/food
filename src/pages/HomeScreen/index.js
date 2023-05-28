@@ -25,7 +25,10 @@ const MyComponent = () => {
     const [products, setProducts] = useState([]);
     const [activeCategory, setActiveCategory] = useState(0);
     const [totalPages, setTotalPages] = useState(0);
-    const [modalStatus, setModalStatus] = useState(true);
+
+    const [modalStatus, setModalStatus] = useState(false);
+    const [modalData, setModalData] = useState({});
+
     const [activePage, setActivePage] = useState(1);
     const [activeSearch, setActiveSearch] = useState('');
 
@@ -66,6 +69,11 @@ const MyComponent = () => {
         getProducts()
     }, [activeCategory, activePage, activeSearch]);
 
+    const handleProductClick = (data) => {
+        setModalData(data);
+        setModalStatus(true);
+    }
+
     return (
         <Container>
             <Header search={headerSearch} onSearch={setHeaderSearch} />
@@ -101,6 +109,7 @@ const MyComponent = () => {
                     <ProductItem
                     key={index}
                     data={item}
+                    onClick={handleProductClick}
                     />
                 ))}
                 </ProductList>
@@ -123,7 +132,7 @@ const MyComponent = () => {
             }
 
             <Modal status={modalStatus} setStatus={setModalStatus}>
-                <ModalProduct />
+                <ModalProduct data={modalData} />
             </Modal>
         </Container>
     );
