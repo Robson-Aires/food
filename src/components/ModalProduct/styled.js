@@ -10,8 +10,9 @@ export const ProductArea = styled.div`
     display: flex;
 `;
 export const ProductButtons = styled.div`
-    height: 50px;
-    background-color: #00FF00;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 `;
 
 export const ProductPhoto = styled.img`
@@ -24,12 +25,36 @@ export const ProductInfoArea = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 10px;
 `;
+
 export const ProductDetails = styled.div`
-    height: 50px;
-    background-color: #FF0000;
+
 `;
+
 export const ProductQuantityArea = styled.div`
     height: 50px;
     background-color: #0000FF;
+`;
+
+export const ProductName = styled.div`
+    font-size: 30px;
+    font-weight: bold;
+`;
+
+export const ProductIngredients = styled.div`
+    font-size: 14px;
+`;
+
+
+export const ProductButton = styled.button`
+    border: 0;
+    background-color: #073C07;
+    box-shadow: 4px 5px 0px #999;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-left: 10px;
+   border-radius: 5px;
 `;
