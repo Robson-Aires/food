@@ -15,6 +15,7 @@ import Header from '../../components/Header/index'
 import CategoryItem from '../../components/categoryItem';
 import ProductItem from '../../components/ProductItem';
 import Modal from '../../components/Modal';
+import ModalProduct from '../../components/ModalProduct';
 
 let searchTimer = null;
 
@@ -122,7 +123,7 @@ const MyComponent = () => {
             }
 
             <Modal status={modalStatus} setStatus={setModalStatus}>
-                ,,,,,,,,,
+                <ModalProduct />
             </Modal>
         </Container>
     );
