@@ -44,6 +44,9 @@ O projeto oferece as seguintes funcionalidades principais:
   
 - GitHub: Plataforma de hospedagem de código-fonte, que permite a colaboração e compartilhamento do projeto.
 </details>
+<br/>
+
+<img src="public/assets/devsfood.jpg">
 
 # Contribuição
 Se você deseja contribuir para este projeto, fique à vontade para
