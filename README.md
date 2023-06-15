@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Boas-vindas ao repositório do projeto devs food!
 
-## Available Scripts
 
-In the project directory, you can run:
+Seja muito bem-vindo(a) ao repositório do Projeto Trivia Aqui você encontrará informações sobre o que foi desenvolvido neste projeto, bem como os principais aprendizados adquiridos durante o processo, para adquirir esse conhecimento, basta clicar na seta abaixo que o conteúdo se abrirá, boa leitura, espero que goste. 🙂
+aqui o link do projeto funcionando(https://devs-food-alpha.vercel.app/)
+<br/>
 
-### `npm start`
+<details>
+  <summary><strong>👨‍💻 O que eu desenvolvi</strong></summary><br />
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Este é um projeto de delivery desenvolvido em React, que permite aos usuários montar um pedido, realizar o login e utilizar um carrinho de compras intuitivo. O objetivo principal é oferecer uma experiência fácil e conveniente para os usuários que desejam solicitar comida ou outros produtos para entrega.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+</details>
 
-### `npm test`
+<br/>
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<details>
+  <summary><strong>Funcionalidades</strong></summary><br />
 
-### `npm run build`
+O projeto oferece as seguintes funcionalidades principais:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Montagem de Pedido: Os usuários podem navegar pelos itens disponíveis, selecionar os produtos desejados e adicionar ao seu pedido. A interface de usuário intuitiva permite visualizar informações relevantes, como descrição, preço e avaliações.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- Login: O sistema de login permite que os usuários criem uma conta ou acessem uma conta existente. Ao fazer login, os usuários podem acessar seu histórico de pedidos, salvar endereços de entrega e personalizar suas preferências.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Carrinho de Compras: Após adicionar itens ao pedido, os usuários podem revisar e editar os produtos no carrinho de compras. Eles também podem atualizar quantidades, remover itens ou adicionar observações adicionais antes de finalizar o pedido.
 
-### `npm run eject`
+- Gerenciamento de Pedidos: O projeto oferece recursos para o gerenciamento de pedidos, tanto para os usuários quanto para os administradores. Os usuários podem rastrear o status dos seus pedidos e receber atualizações em tempo real. Os administradores têm acesso a um painel de controle para gerenciar pedidos, atualizar status e visualizar estatísticas relevantes.
+</details>
+<br />
+<br />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<details>
+  <summary><strong>Tecnologias Utilizadas</strong></summary><br />
+- React: Uma biblioteca JavaScript de código aberto para construir interfaces de usuário.
+- HTML: Linguagem de marcação para estruturar o conteúdo da aplicação web.
+- CSS: Linguagem de estilo para estilizar e personalizar a aparência da aplicação.
+- JavaScript: Linguagem de programação utilizada para adicionar interatividade e lógica à aplicação.
+- APIs: Integração com APIs para obtenção de dados atualizados, como informações de produtos e autenticação de usuários.
+- Git: Sistema de controle de versão para rastrear e gerenciar o código-fonte do projeto.
+- GitHub: Plataforma de hospedagem de código-fonte, que permite a colaboração e compartilhamento do projeto.
+</details>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+# Contribuição
+Se você deseja contribuir para este projeto, fique à vontade para
