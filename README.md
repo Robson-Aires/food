@@ -27,17 +27,21 @@ O projeto oferece as seguintes funcionalidades principais:
 
 - Gerenciamento de Pedidos: O projeto oferece recursos para o gerenciamento de pedidos, tanto para os usuários quanto para os administradores. Os usuários podem rastrear o status dos seus pedidos e receber atualizações em tempo real. Os administradores têm acesso a um painel de controle para gerenciar pedidos, atualizar status e visualizar estatísticas relevantes.
 </details>
-<br />
-<br />
 
 <details>
   <summary><strong>Tecnologias Utilizadas</strong></summary><br />
 - React: Uma biblioteca JavaScript de código aberto para construir interfaces de usuário.
+  
 - HTML: Linguagem de marcação para estruturar o conteúdo da aplicação web.
+
 - CSS: Linguagem de estilo para estilizar e personalizar a aparência da aplicação.
+  
 - JavaScript: Linguagem de programação utilizada para adicionar interatividade e lógica à aplicação.
+  
 - APIs: Integração com APIs para obtenção de dados atualizados, como informações de produtos e autenticação de usuários.
+  
 - Git: Sistema de controle de versão para rastrear e gerenciar o código-fonte do projeto.
+  
 - GitHub: Plataforma de hospedagem de código-fonte, que permite a colaboração e compartilhamento do projeto.
 </details>
 
