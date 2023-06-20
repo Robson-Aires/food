@@ -42,6 +42,8 @@ O projeto oferece as seguintes funcionalidades principais:
   
 - Git: Sistema de controle de versão para rastrear e gerenciar o código-fonte do projeto.
   
+- REACTJS: framework utilizado para a criação do projeto.
+  
 - GitHub: Plataforma de hospedagem de código-fonte, que permite a colaboração e compartilhamento do projeto.
 </details>
 <br/>
@@ -49,4 +51,4 @@ O projeto oferece as seguintes funcionalidades principais:
 <img src="public/assets/devsfood.jpg">
 
 # Contribuição
-Se você deseja contribuir para este projeto, fique à vontade para
+Se você deseja contribuir para este projeto, fique à vontade para entrar em contato
